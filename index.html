@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:author" content="Dom Link Soluções Digitais">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Vidraçaria Vidrosa: Comércio de Vidros e Esquadrias de Alumínio."/>
+    <meta property="og:description" content="Transforme sua visão em realidade com a Vidrosa Comércio de Vidros e Esquadrias de Alumínio. Descubra soluções personalizadas de alta qualidade para seus projetos residenciais e comerciais. Somos especialistas em soluções em vidros, estamos aqui para superar suas expectativas. Entre agora e descubra como podemos elevar o visual da sua residência. #vidraçaria #vidros #vidrostemperados #boxdebanheiro #blindex #janelas #portas #guarda-corpo"/>
+    <meta property="og:site_name" content="Vidrosa Comércio de Vidros e Esquadrias de Alumínio."/>
+    
+    
+    <title>Vidrosa Comercio de Vidros</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/icons/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header id="menu" class="menu">
+        
+        <div class="logo">
+            <img src="./assets/icons/logo.png" alt="">
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+        <nav id="navMenu">
+           
+            <ul>
+                <li id="inicio" onclick="inicio()">Inicio</li>
+                <li id="sobre" onclick="sobre()">Sobre</li>
+                <li id="services" onclick="services()">Serviços</li>
+                <li id="fotos" onclick="fotos()">Fotos</li>
+                <li id="location" onclick="localiza()">Localização</li>
+                <li id="contato" onclick="contato()">Contato</li>
+            </ul>
+        </nav>
+       
+    </header>
+    
+    <main>
+        <div class="banner" id="banner">
+            <div class="banner-logo" data-aos="fade-up" data-aos-delay="500"></div>
+            <img 
+            data-aos="flip-up"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+            class="logobanner"
+                 src="./assets/icons/logo.png" alt="">
+            <div class="hero">
+                
+                <h1 data-aos="fade-down">Transforme sua visão em realidade</h1>
+                <p data-aos="fade-up">
+                Descubra o poder do vidro com a Vidrosa, onde cada projeto é uma obra-prima em transparência, elegância e funcionalidade.
+                </p>
+            </div>
+              
+        </div>
+        <div class="sobre" id="about">
+           <div class="texto">
+            <p>Bem-vindo à Vidrosa Comércio de Vidros e Esquadrias de Alumínio, sua parceira confiável em soluções de vidros personalizados. Com mais de 25 anos de experiência no setor, estamos comprometidos em fornecer produtos de vidro de alta qualidade e serviços excepcionais para atender às necessidades dos nossos clientes.Na Vidrosa, combinamos habilidade artesanal com tecnologia moderna para criar peças únicas e funcionais que aprimoram espaços residenciais e comerciais. Desde janelas e portas até espelhos e divisórias, nossa equipe dedicada trabalha incansavelmente para garantir a satisfação do cliente em cada projeto.</p>
+           </div>
+           <div class="img-sobre">
+                <div class="aboutimage" data-aos="fade-down" data-aos-duration="800">
+                    <img src="./assets/images/Portas/porta-1.png" alt="">
+                </div>
+                <div class="aboutimage second-image" data-aos="fade-up" data-aos-duration="800">
+                    <img src="./assets/images/Guarda-corpo/guarda-corpo-14.png" alt="">
+                </div>
+                <div class="aboutimage third-image" data-aos="fade-down" data-aos-duration="800">
+                    <img src="./assets/images/Janelas/casa-madeira.png" alt="">
+                </div>
+           </div>
+        </div>
+        <div class="services" id="serviços">
+            <h1>Serviços</h1>
+            <div class="texto-services">
+                <p>
+                    Explore nossa gama de produtos e serviços e descubra por que a Vidrosa é a escolha ideal para suas necessidades de vidro. Estamos ansiosos para trabalhar com você e superar suas expectativas em cada etapa do processo.
+                </p>
+            </div>
+
+            <div class="service-list">
+                <div class="jobs" data-aos="fade-down" data-aos-duration="500">
+            
+                    <div class="job-info" >
+                        <strong>Box de banheiro</strong>
+                        <img src="./assets/images/Box/box-3.png" alt="">
+                        
+                        <button class="openModal" data-modal-id="modal1">Saiba mais</button>
+                    </div>
+                </div>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="modalText">
+                            <h2> Box de banheiro:</h2>
+                            <p>
+                                Transforme seu banheiro em um refúgio relaxante com os nossos boxes de vidro temperados. Na Vidrosa, oferecemos uma variedade de opções de design para atender às suas necessidades, garantindo funcionalidade e beleza em cada detalhe.
+                            </p>
+                            
+                        </div>
+                       
+                        <div class="modalslider">
+                            <div class="modalslides">
+                                <div class="modalslide">
+                                    <img src="./assets/images/Box/box-1.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Box/box-2.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Box/box-3.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Box/box-4.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Box/box-5.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Box/box-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="modalButtons">
+                                <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                                <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                            </div>
+
+                            <ul class="modalList">
+                                <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Usabilidade Aprimorada:</strong> Os boxes de banheiro proporcionam uma barreira eficaz contra respingos de água, mantendo o restante do banheiro seco e fácil de limpar.</li>
+                                <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Segurança Reforçada:</strong> Fabricados com vidro temperado de alta resistência, os boxes de banheiro garantem segurança máxima, reduzindo o risco de acidentes relacionados a estilhaços.</li>
+                                <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Privacidade Preservada:</strong> Além de sua funcionalidade principal, os boxes de banheiro também oferecem privacidade adicional, criando um espaço separado e íntimo dentro do banheiro.</li>
+                                <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Estética Moderna:</strong> Disponíveis em uma variedade de designs e acabamentos, os boxes de banheiro adicionam um toque moderno e elegante ao ambiente, elevando o estilo geral do banheiro.</li>
+                                <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Fácil Manutenção:</strong> Com superfícies lisas e resistentes a manchas, os boxes de banheiro são fáceis de limpar e manter, garantindo uma aparência impecável por mais tempo.</li>
+                             </ul>
+
+                            <div class="order">
+                                <button class="orderButton " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                                </svg>Solicitar Orçamento</button>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="jobs" data-aos="fade-down" data-aos-duration="800">
+                    <div class="job-info">
+                        <strong>Guarda-corpo</strong>
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-10.png" alt="">
+                        
+                        <button class="openModal" data-modal-id="modal2">Saiba mais</button>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                       <div class="modalText">
+                            <h2>Guarda corpo</h2>
+                            <p>
+                                Proporcione segurança sem comprometer a estética com os nossos guarda-corpos de vidro. Com designs modernos e materiais de alta qualidade, nossos guarda-corpos complementam qualquer espaço, oferecendo proteção e beleza para sacadas, escadas e varandas.
+                            </p>
+                            </div>
+                            
+                            <div class="modalslider">
+                                <div class="modalslides">
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-10.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-1.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-2.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-3.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-4.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-5.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-6.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-7.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-8.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-9.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-11.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-tangara.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-13.png" alt="">
+                                    </div>
+                                    <div class="modalslide">
+                                        <img src="./assets/images/Guarda-corpo/guarda-corpo-14.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modalButtons">
+                                    <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                                    <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                                </div>
+
+                                <ul class="modalList">
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Segurança Primordial:</strong> Os guarda-corpos oferecem uma barreira protetora essencial, especialmente em escadas, varandas e sacadas elevadas, garantindo a segurança dos usuários e prevenindo quedas acidentais.</li>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Transparência e Visibilidade:</strong> Com sua estrutura de vidro transparente, os guarda-corpos proporcionam uma sensação de espaço aberto, ao mesmo tempo em que mantêm a segurança, permitindo uma visão clara do ambiente ao redor.</li>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Durabilidade e Resistência:</strong> Fabricados com vidro temperado de alta resistência e materiais de qualidade, os guarda-corpos garantem durabilidade excepcional, mesmo em condições climáticas adversas.</li>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Design Moderno e Elegante:</strong> Com uma variedade de estilos e acabamentos disponíveis, os guarda-corpos complementam a estética do espaço, adicionando um toque contemporâneo e sofisticado ao ambiente.</li>
+                                    <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Manutenção Simplificada:</strong> Devido à sua superfície lisa e resistente a manchas, os guarda-corpos são fáceis de limpar e exigem pouca manutenção, mantendo sua aparência impecável por muito tempo.</li>
+                                </ul>
+
+                                <div class="order">
+                                    <button class="orderButton " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                                    </svg>Solicitar Orçamento</button>
+                                </div>
+
+                       </div>
+                    </div>
+                </div>
+                <div class="jobs" data-aos="fade-down" data-aos-duration="500">
+                    <div class="job-info">
+                        <strong>Portas</strong>
+                        <img src="./assets/images/Portas/porta-12.png" alt="">
+                        
+                        <button class="openModal" data-modal-id="modal3">Saiba mais</button>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="modalText">
+                            <h2>Portas</h2>
+                            <p>Adicione um toque de classe e modernidade aos seus ambientes com as nossas portas de vidro temperado. Desde portas de entrada impressionantes até portas internas elegantes, na Vidrosa, oferecemos soluções sob medida que combinam estilo e funcionalidade.</p>
+
+                        </div>
+                       
+
+                        <div class="modalslider">
+                            <div class="modalslides">
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-1.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-2.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-3.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-4.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-5.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-6.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-7.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-8.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-9.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-10.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-11.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-12.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-13.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/armario-1.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/armario-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="modalButtons">
+                            <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                            <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                        </div>
+                        <ul class="modalList">
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Usabilidade Versátil:</strong> As portas Blindex oferecem uma solução elegante e funcional para diversos ambientes, desde residenciais até comerciais, adicionando um toque moderno e sofisticado.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Segurança Reforçada:</strong> Fabricadas com vidro temperado de alta resistência, as portas Blindex proporcionam segurança máxima, reduzindo o risco de acidentes e garantindo tranquilidade para os usuários.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Transparência e Luminosidade:</strong> Com sua superfície de vidro transparente, as portas Blindex permitem a entrada de luz natural, criando uma sensação de amplitude e luminosidade no ambiente.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Estética Elegante:</strong> Disponíveis em uma variedade de designs e acabamentos, as portas Blindex complementam qualquer estilo de decoração, agregando beleza e sofisticação ao espaço.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Manutenção Prática:</strong> Com sua superfície lisa e resistente a manchas, as portas Blindex são fáceis de limpar e exigem pouca manutenção, mantendo sua aparência impecável ao longo do tempo.</li>
+                        </ul>
+                        <div class="order">
+                            <button class="orderButton " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>Solicitar Orçamento</button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="jobs" data-aos="fade-up" data-aos-duration="400">
+                    <div class="job-info">
+                        <strong>Janelas</strong>
+                        <img src="./assets/images/Janelas/janela-10.png" alt="">
+                        
+                        <button class="openModal" data-modal-id="modal4">Saiba mais</button>
+                    </div>
+                </div>
+                <div id="modal4" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                       
+                        <div class="modalText">
+                            <h2>Janelas</h2>
+                            <p>
+                                Deixe a luz natural entrar e melhore a estética de seus espaços com nossas janelas de vidro personalizadas. Na Vidrosa, oferecemos uma ampla variedade de estilos e designs para atender às suas necessidades específicas, combinando funcionalidade com beleza em cada janela. Nossos produtos são fabricados com materiais de alta qualidade, garantindo durabilidade e desempenho excepcionais em qualquer ambiente
+                            </p>
+                        </div>
+
+                        <div class="modalslider">
+                            <div class="modalslides">
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/casa-madeira.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-10.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-12.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-15.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-1.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-2.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-3.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-4.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-5.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-7.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-8.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-9.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Janelas/janela-6.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modalButtons">
+                            <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                            <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                        </div>
+                        <ul class="modalList">
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Usabilidade Versátil:</strong> As janelas Blindex oferecem uma solução versátil para qualquer ambiente, proporcionando ventilação, iluminação natural e isolamento térmico e acústico.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Segurança Reforçada:</strong> Fabricadas com vidro temperado de alta resistência, as janelas Blindex garantem segurança máxima, protegendo contra impactos e intrusões indesejadas.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Estética Moderna:</strong> Com seu design elegante e acabamento de qualidade, as janelas Blindex adicionam um toque contemporâneo e sofisticado ao espaço, valorizando a estética do ambiente.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Isolamento Térmico e Acústico:</strong> Com seu vidro temperado, duplo ou laminado, as janelas Blindex proporcionam isolamento eficaz contra ruídos externos e variações de temperatura, tornando o ambiente mais confortável.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Manutenção Simplificada:</strong> Com sua superfície lisa e resistente a manchas, as janelas Blindex são fáceis de limpar e requerem pouca manutenção, mantendo sua beleza e funcionalidade ao longo do tempo.</li>
+                        </ul>
+                        <div class="order">
+                            <button class="orderButton " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>Solicitar Orçamento</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jobs" data-aos="fade-up" data-aos-duration="800">
+                    <div class="job-info">
+                        <strong>Esquadrias de Alumínio</strong>
+                        <img src="./assets/images/Esquadrias-de-aluminio/Esquadria-1.png" alt="">
+
+                        <button class="openModal" data-modal-id="modal5">Saiba mais</button>
+                    </div>
+                </div>
+                <div id="modal5" class="modal" >
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        
+                        <div class="modalText">
+                            <h2>Esquadrias de Alumínio</h2>
+                        <p>
+                            Descubra a qualidade e versatilidade das nossas esquadrias de alumínio personalizadas. Na Vidrosa, oferecemos uma ampla gama de opções de esquadrias de alumínio projetadas para atender às suas necessidades específicas. Combinando durabilidade, estilo e eficiência energética, nossas esquadrias são ideais para qualquer projeto, desde residências até empreendimentos comerciais.
+                        </p>
+                        </div>
+
+                        <div class="modalslider">
+                            <div class="modalslides">
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/Esquadria-1.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria- 1 .png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-1.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/esquadria-2.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria-2 .png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-2.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/esquadria-3.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria- 3.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-3.png " alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/esquadria-4.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria-4 .png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria- 4.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/esquadria-5.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria-5.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-5 .png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-6.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-7.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="modalButtons">
+                            <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                            <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                        </div>
+                        <ul class="modalList">
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Durabilidade Excepcional:</strong> As esquadrias de alumínio oferecem uma solução durável e resistente à corrosão, garantindo longevidade e baixa necessidade de manutenção.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Versatilidade de Design:</strong> Com uma variedade de estilos e acabamentos disponíveis, as esquadrias de alumínio se adaptam facilmente a diferentes estilos arquitetônicos, proporcionando flexibilidade de design.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Eficiência Energética:</strong> As esquadrias de alumínio podem ser projetadas com tecnologia de isolamento térmico avançada, contribuindo para a eficiência energética do ambiente, reduzindo custos com aquecimento e resfriamento.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Segurança Reforçada:</strong> Fabricadas com materiais robustos, as esquadrias de alumínio oferecem resistência contra arrombamentos e impactos, proporcionando um ambiente mais seguro para os ocupantes.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Estética Moderna:</strong> Com linhas elegantes e acabamentos sofisticados, as esquadrias de alumínio agregam um toque contemporâneo e estiloso ao ambiente, valorizando a estética geral da construção.</li>
+                        </ul>
+                        <div class="order">
+                            <button class="orderButton " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>Solicitar Orçamento</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jobs" data-aos="fade-up" data-aos-duration="400">
+    
+                    <div class="job-info">
+                        <strong>Outras soluções em vidros</strong>
+                        <img src="./assets/images/Guarda-corpo/pergolado.png" alt="">
+                        
+                        <button class="openModal" data-modal-id="modal6">Saiba mais</button>
+                    </div>
+                </div>
+                <div id="modal6" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        
+                        <div class="modalText">
+                            <h2>Outras soluções em vidros</h2>
+                            <p>Além dos nossos serviços principais, na Vidrosa, oferecemos uma ampla gama de soluções personalizadas em vidro para atender às necessidades específicas de cada cliente. De divisórias de ambiente a prateleiras, pergolados e tampos de mesa, estamos aqui para transformar suas ideias em realidade, oferecendo qualidade e excelência em cada projeto.</p>
+                        </div>
+
+                        <div class="modalslider">
+                            <div class="modalslides">
+                                <div class="modalslide">
+                                    <img src="./assets/images/Guarda-corpo/pergolado.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Box/box-6.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria- 1 .png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-2.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-1.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/armario-2.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Guarda-corpo/guarda-corpo-1.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Portas/porta-12.png" alt="">
+                                </div>
+                                <div class="modalslide">
+                                    <img src="./assets/images/Guarda-corpo/guarda-corpo-3.png" alt="">
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="modalButtons">
+                            <button id="modal-prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                            <button id="modal-nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                        </div>
+
+                        <ul class="modalList">
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Portas Sistema Versatik:</strong> O Sistema Versatik oferece flexibilidade de design, permitindo a instalação de portas de correr, pivotantes e de abrir com facilidade, adaptando-se a diferentes necessidades e espaços.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Box até o Teto:</strong> Os boxes de banheiro que vão até o teto proporcionam uma vedação mais eficaz, evitando vazamentos de água e garantindo um ambiente mais higiênico e fácil de limpar.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Tampo de Mesa:</strong> Os tampos de mesa de vidro são duráveis, fáceis de limpar e adicionam um toque moderno e elegante a qualquer ambiente, sendo ideais para mesas de jantar, escritórios ou áreas de trabalho.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Espelhos:</strong>Os espelhos são elementos versáteis que ampliam visualmente os espaços, proporcionam iluminação e contribuem para a decoração, sendo ideais para banheiros, salas de estar e quartos.</li>
+                            <li><i class="fa fa-check" aria-hidden="true" style="color: green;" ></i> <strong>Armários:</strong> Os armários oferecem soluções de armazenamento práticas e funcionais para organizar e otimizar espaços, sendo projetados sob medida para atender às necessidades específicas de cada cliente, com uma variedade de opções de acabamento e design.</li>
+                        </ul>
+
+                        <div class="order">
+                            <button class="orderButton " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>Solicitar Orçamento</button>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="coments">
+            <div>
+                <img
+                data-aos="flip-up"
+                data-aos-delay="500"
+                data-aos-duration="1500"
+                src="./assets/icons/logo.png" alt="">
+            </div>
+            <ul class="ulSlides">
+                <li>Serviço bem feito, no prazo combinado, material de boa qualidade e pessoal atencioso. <br> - Matilde Fernandes.</li>
+                <li>Bom preço, compromisso com a entrega dos serviços, e sobretudo, cordialidade no atendimento. Estou muito satisfeita. <br> - Ana Rocha</li>
+                <li>Empresa séria, cumpridora de prazo, com pessoal capacitado e responsável. A matéria prima utilizada é de primeira qualidade. Há dez (10) anos que sou cliente e só tenho elogios a fazer. 
+                    <br>- Luiz Azevedo.</li>
+            </ul>
+        </div>
+        <div class="fotos" id="foto">
+            <h1>Fotos</h1>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/casa-madeira.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/mansaovidro.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-14.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-10.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-10.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-12.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Box/box-1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Box/box-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Box/box-3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/Esquadria-1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/esquadria-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/esquadria-3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Box/box-4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Box/box-5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Box/box-6.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-6.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-6.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-6.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/esquadria-4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/esquadria-5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria- 1 .png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria-2 .png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria- 3.png " alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-7.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-8.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-9.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-7.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-8.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-9.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-7.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-8.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-9.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria-4 .png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/porta-esquadria-5.png " alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-10.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-11.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-13.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-14.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/guarda-corpo-tangara.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-10.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-11.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-12.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-13.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-14.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Janelas/janela-15.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-10.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-11.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-12.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Portas/porta-13.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Guarda-corpo/pergolado.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria- 4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-5 .png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-6.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/janela-esquadria-7.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/esquadria-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/esquadria-3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/esquadria-4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/Esquadrias-de-aluminio/esquadria-5.png" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prevBtn"><img src="./assets/icons/arrow-left-circle.svg" alt=""></button>
+                    <button id="nextBtn"><img src="./assets/icons/arrow-right-circle.svg" alt=""></button>
+                </div>
+            </div>
+           
+        </div>
+        <div class="location" id="local">
+            <h1>Localização</h1>
+            <p>Nosso estabelecimento se encontra:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.207045112912!2d-44.023238!3d-19.915678099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69429171fd157%3A0x3c00ee449d595b31!2sR.%20Fl%C3%B4r%20de%20Alecrim%2C%2025%20-%20Pindorama%2C%20Belo%20Horizonte%20-%20MG%2C%2030865-350!5e0!3m2!1spt-BR!2sbr!4v1715098901835!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contato" id="contact">
+            <h1>Contato</h1>
+            <p>Entre em contato conosco para que possamos oferecer uma solução para a sua necessidade.</p>
+            <ul>
+                <li id="email" onclick="email()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                      </svg>Email</li>
+                <li id="chamar" onclick="call()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>Telefone</li>
+                <li id="wpp" onclick="wppOpen()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>WhatsApp</li>
+                <li id="insta" onclick="insta()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>Instagram
+                
+                </li>
+            </ul>
+        
+        </div>
+    </main>
+    <footer>
+        <p>Contato: (31) 2512-9685 | 99797-7466</p>
+        <em>© 2024 Vidrosa Comércio de Vidros e Esquadrias de Alumínios. <br>Todos os direitos reservados.</em><br>
+        <em>Desenvolvido por Dom Link Soluções Digitais</em>
+    </footer>
+    <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
