@@ -1129,6 +1129,210 @@ footer {
 }
 }
 
+@media  only screen and (width: 430px) {
+    main{
+        width: 100%;
+        max-width: 430px;
+    }
+    body {
+        width: 100%;
+        max-width: 430px;
+    }
+    
+    header {
+        width: 100%;
+        max-width: 480px;
+    }
+    .logo img {
+        width: 100px;
+
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    
+    nav {
+        display: none;
+        z-index: 1;
+        width: 100%;
+       
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #06121e;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        padding: 20px 0;
+    }
+    .banner {
+        width: 100%;
+        max-width: 430px;
+    }
+    .banner img {
+        width: 50%;
+        margin-bottom: 220px ;    
+   } 
+   .hero h1 {
+    font-size: 20px;
+   }
+   .hero p {
+    font-size: 15px;
+   }
+   .texto {
+    width: 80%;
+    line-height: 2;
+   }
+   .img-sobre{
+    width: 100%;
+    max-width: 430px;
+   }
+   .img-sobre img {
+    border-radius: 0;
+    width: 100%;
+    
+   } 
+   .services{
+    width: 100%;
+    min-width: 426px;
+    max-width: 480px;
+    margin: 0 auto;
+   }
+   .texto-services {
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+   }
+   .texto-services p {
+    width: 60%;
+   }
+   .service-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 430px;
+    justify-items: center;
+    
+   }
+   .jobs {
+    width: 100%;
+    max-width: 430px;  
+   }
+   .job-info {
+    width: 100%;
+   }
+   .modal-content{
+    width: 100%;
+    max-width: 480px;
+    min-width: 426px;
+    margin: 0;
+    
+   }
+   .modalText{
+    width: 100%;
+   }
+   .modalList{
+    width: 100%;
+   }
+   .modalslide img{
+    width: 100%;
+   }
+   
+   .coments {
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    gap: 1.8rem;    
+   }
+   .coments div img {
+    width: 40%;
+    margin-left: 10px;    
+   }
+   .coments li {
+    font-size: 20px; 
+   }
+   .fotos {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+   }
+   .fotos img{
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 0 auto;
+
+   }
+   .buttons {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   }
+   .buttons button {
+    width: 40%;
+    margin: 10px auto;
+    
+   }
+   .buttons button img {
+    height: 40px;
+    
+   }
+
+   .location{
+    width: 100%;
+    max-width: 430px;
+    
+   }
+  
+   .contato {
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   .contato h1 {
+    font-size: 40px;
+   }
+   .contato p {
+    font-size: 20px;
+   }
+   .contato ul {
+    width: 60%;
+    height: 50%;
+    
+   }
+   .contato ul li{
+    width: 100%;
+   }
+   
+   footer {
+    width: 100%;
+    max-width: 430px;
+    
+   }
+}
+
 @media screen and (min-width: 426px) and (max-width: 480px){
     main{
         width: 100%;
@@ -1215,8 +1419,8 @@ footer {
    }
    .texto-services {
     width: 100%;
-    max-width: 426px;
-    min-width: 480px;
+    max-width: 480px;
+    min-width: 426px;
     display: flex;
     justify-content: center;
     align-items: center;
