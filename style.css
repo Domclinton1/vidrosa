@@ -422,9 +422,6 @@ nav ul li:last-child {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    
-    
-    
 }
 .buttons button:hover {
     border: 3px solid goldenrod;
