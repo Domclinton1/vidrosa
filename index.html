@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Dom Link Soluções Digitais">
-    <meta name="keywords" content="vidraçaria, MG, Belo Horizonte - Minas Gerais - Brasil, vidraçaria mais proxima, vidros temperados, vidraçaria boa, box de banheiro, espelhos, vidraceiro, vidraçaria em Belo Horizonte, vidraçaria em Contagem, vidraçaria em Nova Lima, blindex, janelas blindex" />
+    <meta name="author" content="Vidrosa Comercio de Vidros e Esquadrias de Aluminio">
+    <meta name="keywords" content="vidraçaria, MG, Belo Horizonte - Minas Gerais - Brasil, vidraçaria mais proxima, vidros temperados, vidrosa comercio de vidros e esquadrias de aluminio, box de banheiro, espelhos, vidraceiro, vidraçaria em Belo Horizonte, vidraçaria em Contagem, vidraçaria em Nova Lima, blindex, janelas blindex" />
     <meta name ="description" content="Transforme sua visão em realidade com a Vidrosa Comércio de Vidros e Esquadrias de Alumínio. Descubra soluções personalizadas de alta qualidade para seus projetos residenciais e comerciais. Somos especialistas em soluções em vidros, estamos aqui para superar suas expectativas. Estamos localizados em Belo Horizonte - Minas Gerais. Entre agora e descubra como podemos elevar o visual da sua residência.">
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Vidraçaria Vidrosa: Comércio de Vidros e Esquadrias de Alumínio."/>
@@ -27,28 +27,24 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <header id="menu" class="menu">
-        
-        <div class="logo">
-            <img src="./assets/icons/logo.png" alt="">
+    <header class="menuPai">
+        <div class="logo" >
+            <img src="./assets/icons/logo.png" alt="" >
         </div>
-        <div class="menu-toggle" id="menuToggle">
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
+        <div class="menuHamburguer" onclick="toggleMenu()">
+            &#9776;
         </div>
-        <nav id="navMenu">
-           
-            <ul>
-                <li id="inicio" onclick="inicio()">Inicio</li>
-                <li id="sobre" onclick="sobre()">Sobre</li>
-                <li id="services" onclick="services()">Serviços</li>
-                <li id="fotos" onclick="fotos()">Fotos</li>
-                <li id="location" onclick="localiza()">Localização</li>
-                <li id="contato" onclick="contato()">Contato</li>
+        <nav class="menuFilho" id="menuFilho">
+            <ul class="menuLista">
+                <li onclick="inicio()">Inicio</li>
+                <li onclick="sobre()">Sobre</li>
+                <li onclick="services()">Serviços</li>
+                <li onclick="fotos()">Fotos</li>
+                <li onclick="localiza()">Localização</li>
+                <li onclick="contato()">Contato</li>
             </ul>
         </nav>
-       
+    </header>
     </header>
     
     <main>
@@ -62,7 +58,7 @@
                  src="./assets/icons/logo.png" alt="">
             <div class="hero">
                 
-                <h1 data-aos="fade-down">Transforme sua visão em realidade</h1>
+                <h1 data-aos="fade-down">A vidraçaria que transforma sua visão em realidade</h1>
                 <p data-aos="fade-up">
                 Descubra o poder do vidro com a Vidrosa, onde cada projeto é uma obra-prima em transparência, elegância e funcionalidade.
                 </p>
@@ -71,7 +67,8 @@
         </div>
         <div class="sobre" id="about">
            <div class="texto">
-            <p>Bem-vindo à Vidrosa Comércio de Vidros e Esquadrias de Alumínio, sua parceira confiável em soluções de vidros personalizados. Com mais de 25 anos de experiência no setor, estamos comprometidos em fornecer produtos de vidro de alta qualidade e serviços excepcionais para atender às necessidades dos nossos clientes.Na Vidrosa, combinamos habilidade artesanal com tecnologia moderna para criar peças únicas e funcionais que aprimoram espaços residenciais e comerciais. Desde janelas e portas até espelhos e divisórias, nossa equipe dedicada trabalha incansavelmente para garantir a satisfação do cliente em cada projeto.</p>
+            <h1>Sobre a vidraçaria</h1>
+            <p>Bem-vindo à vidaraçaria <strong style="color: gold;">Vidrosa Comércio de Vidros e Esquadrias de Alumínio</strong>, sua parceira confiável em soluções de vidros personalizados. Com mais de 25 anos de experiência no setor, estamos comprometidos em fornecer produtos de vidro de alta qualidade e serviços excepcionais para atender às necessidades dos nossos clientes.Na Vidrosa, combinamos habilidade artesanal com tecnologia moderna para criar peças únicas e funcionais que aprimoram espaços residenciais e comerciais. Desde janelas e portas até espelhos e divisórias, nossa equipe dedicada trabalha incansavelmente para garantir a satisfação do cliente em cada projeto.</p>
            </div>
            <div class="img-sobre">
                 <div class="aboutimage" data-aos="fade-down" data-aos-duration="800">
@@ -86,7 +83,7 @@
            </div>
         </div>
         <div class="services" id="serviços">
-            <h1>Serviços</h1>
+            <h1>Serviços que a nossa vidraçaria oferece:</h1>
             <div class="texto-services">
                 <p>
                     Explore nossa gama de produtos e serviços e descubra por que a Vidrosa é a escolha ideal para suas necessidades de vidro. Estamos ansiosos para trabalhar com você e superar suas expectativas em cada etapa do processo.
@@ -844,7 +841,8 @@
         </div>
         <div class="location" id="local">
             <h1>Localização</h1>
-            <p>Nosso estabelecimento se encontra:</p>
+            <p>Nossa vidraçaria se encontra no endereço: <a href="https://www.google.com/maps/dir//R.+Fl%C3%B4r+de+Alecrim,+25+-+Pindorama,+Belo+Horizonte+-+MG,+30865-350/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xa69429171fd157:0x3c00ee449d595b31?sa=X&ved=1t:707&ictx=111" style="text-decoration: none; color: gold;">Rua Flor de Alecrim, N° 25, Jardim Filadélfia - Belo Horizonte, Minas Gerais</a>
+            </p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.207045112912!2d-44.023238!3d-19.915678099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69429171fd157%3A0x3c00ee449d595b31!2sR.%20Fl%C3%B4r%20de%20Alecrim%2C%2025%20-%20Pindorama%2C%20Belo%20Horizonte%20-%20MG%2C%2030865-350!5e0!3m2!1spt-BR!2sbr!4v1715098901835!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="contato" id="contact">
@@ -875,8 +873,12 @@
     </main>
     <footer>
         <p>Contato: (31) 2512-9685 | 99797-7466</p>
-        <em>© 2024 Vidrosa Comércio de Vidros e Esquadrias de Alumínios. <br>Todos os direitos reservados.</em><br>
-        <em>Desenvolvido por Dom Link Soluções Digitais</em>
+        <p>&reg; 2024 Vidrosa Comércio de Vidros e Esquadrias de Alumínios. <br>Todos os direitos reservados.</p><br>
+        <em onclick="dev()">&copy; Developed by Dom Link Soluções Digitais.</em>
+        <a  class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+            <img onclick=" wppOpen()" src="./assets/icons/whatssapp.svg" alt="Botão whatsapp">
+            <span class="tooltip-text">Agende seu orçamento.</span>
+        </a>
     </footer>
     <script src="./script.js"></script>
     <script>

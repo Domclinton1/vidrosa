@@ -1,20 +1,54 @@
-document.getElementById('menuToggle').addEventListener('click', function(e) {
-    document.getElementById('navMenu').classList.toggle('active');
-    e.stopPropagation(); // Impede que o evento clique se propague para o documento
+function toggleMenu() {
+    const menu = document.querySelector('.menuFilho');
+    menu.classList.toggle('active');
+}
+
+let lastScrollTop = 0;
+window.addEventListener('scroll', function() {
+    const menuPai = document.querySelector('.menuPai');
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        menuPai.style.top = "-100px";
+    } else {
+        // Scrolling up
+        menuPai.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
 });
 
-document.addEventListener('click', function(e) {
-    var navMenu = document.getElementById('navMenu');
-    if (!navMenu.contains(e.target)) {
-        navMenu.classList.remove('active');
+window.addEventListener('click', function(event) {
+    const menu = document.querySelector('.menuFilho');
+    const menuHamburguer = document.querySelector('.menuHamburguer');
+    if (!menu.contains(event.target) && !menuHamburguer.contains(event.target)) {
+        menu.classList.remove('active');
     }
 });
+
+// Função para fechar o menu quando a página é rolada
+function closeMenuOnScroll() {
+    var menu = document.getElementById('menuFilho');
+
+    // Verifica se o menu está aberto
+    if (menu.classList.contains('active')) {
+        // Fecha o menu
+        menu.classList.remove('active');
+    }
+}
+
+// Adiciona um event listener para escutar por rolagens na página
+window.addEventListener('scroll', closeMenuOnScroll);
+
+function dev() {
+    var click = window.document.querySelectorAll('dev')
+    window.open("https://www.domlinksolucoesdigitais.com.br")
+}
 
 var orderButtons = document.getElementsByClassName('orderButton')
 
 function openWpp() {
 
-    var click =  window.open("https://wa.me/5531994038782?text=Ola,%20quero%20fazer%20um%20orçamento%20sobre um projeto...")
+    var click =  window.open("https://wa.me/5531997977466?text=Ola,%20quero%20fazer%20um%20orçamento%20sobre um projeto...")
 }
 for (var i = 0; i < orderButtons.length; i++) {
     orderButtons[i].addEventListener('click', openWpp);
@@ -26,9 +60,7 @@ function wppOpen() {
 }
 
 function call(){
-    var phoneNumber = "+55313125129685";
-    var phoneNumberEncoded = encodeURIComponent(phoneNumber);
-    window.location.href = "tel:" + phoneNumberEncoded;
+    window.location.href = 'tel: +55313125129685'
 }
 
 function email(){
@@ -37,7 +69,7 @@ function email(){
 }
 function insta(){
     var click = window.document.querySelectorAll('insta')
-    window.open("https://instagram.com/vidrosa.vidracaria")
+    window.open("https://instagram.com/vidrosa_ofc")
 }
 
 function inicio(){
