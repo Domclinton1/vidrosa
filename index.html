@@ -94,9 +94,9 @@
     
     <main>
         <section class="hero">
-                <h1 data-aos="fade-down">A vidraçaria que transforma sua visão em realidade</h1>
+                <h1 data-aos="fade-right">A vidraçaria que transforma sua visão em realidade</h1>
                
-                    <button class="order orderButton" style="background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e);border: #fff 1px solid; cursor: pointer; z-index: 1;" onclick="return gtag_report_conversion('http://vidrosa.com.br');"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <button data-aos="fade-right" class="order orderButton" style="background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e);border: #fff 1px solid; cursor: pointer; z-index: 1;" onclick="return gtag_report_conversion('http://vidrosa.com.br');"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                         <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                     </svg>Solicitar Orçamento</button>
              
@@ -107,7 +107,7 @@
             </section>
         <div class="sobre" id="sobre">
            <div class="texto">
-            <h2>Sobre a vidraçaria</h2>
+            <h2>Sobre a <span style="color: gold;">vidraçaria</span></h2>
             <p>Bem-vindo à vidaraçaria <strong style="color: gold;">Vidrosa Comércio de Vidros e Esquadrias de Alumínio</strong>, sua parceira confiável em soluções de vidros personalizados. Com mais de <span style="color: gold;">28 anos</span> de experiência no setor, estamos comprometidos em fornecer produtos de vidros temperados de alta qualidade e serviços excepcionais para atender às necessidades dos nossos clientes.Na Vidrosa, combinamos habilidade artesanal com tecnologia moderna para criar peças únicas e funcionais que aprimoram espaços residenciais e comerciais. Desde janelas e portas até espelhos e divisórias, nossa equipe dedicada trabalha incansavelmente para garantir a satisfação do cliente em cada projeto.</p>
            </div>
            <div class="img-sobre">
@@ -123,7 +123,7 @@
            </div>
         </div>
         <div class="services" id="serviços">
-            <h1>Serviços que a nossa vidraçaria oferece:</h1>
+            <h1>Serviços que a nossa <span style="color: gold;">vidraçaria oferece:</span></h1>
             <div class="texto-services">
                 <p>
                     Explore nossa gama de produtos e serviços e descubra por que a Vidrosa é a escolha ideal para suas necessidades de vidro. Estamos ansiosos para trabalhar com você e superar suas expectativas em cada etapa do processo.
@@ -633,21 +633,15 @@
                 </div>                
             </div>
         </div>
-        <div class="coments">
-            <div>
-                <img
-                data-aos="flip-up"
-                data-aos-delay="500"
-                data-aos-duration="1500"
-                src="./assets/icons/logo.png" alt="">
-            </div>
-            <ul class="ulSlides">
-                <li>Serviço bem feito, no prazo combinado, material de boa qualidade e pessoal atencioso. <br> - Matilde Fernandes.</li>
-                <li>Bom preço, compromisso com a entrega dos serviços, e sobretudo, cordialidade no atendimento. Estou muito satisfeita. <br> - Ana Rocha</li>
-                <li>Empresa séria, cumpridora de prazo, com pessoal capacitado e responsável. A matéria prima utilizada é de primeira qualidade. Há dez (10) anos que sou cliente e só tenho elogios a fazer. 
-                    <br>- Luiz Azevedo.</li>
-            </ul>
-        </div>
+        <section id="reviews" class="reviews">
+            <h2>O que nossos clientes <span style="color: gold;">dizem sobre a vidraçaria</span></h2>
+            <div id="google-reviews" class="reviews-container"></div>
+
+            <a href="https://share.google/GCuOVtUaFg9k76DhC" target="_blank" class="btn-google">
+            ⭐ Avalie nossa empresa no Google
+            </a>
+        </section>
+
         <div class="fotos" id="fotos">
             <h1>Fotos</h1>
             <div class="slider">
@@ -898,6 +892,49 @@
             </div>
            
         </div>
+        <section id="faq" style="background:#06121e; color:#f5f5f5; padding:60px 20px;">
+            <div style="max-width:900px; margin:0 auto;">
+                <h2 style="text-align:center; font-size:2.2rem; margin-bottom:40px; color:#fff;">
+                Perguntas Frequentes
+                </h2>
+
+                <div class="faq-item">
+                <button class="faq-question">Vocês fazem orçamento gratuito?</button>
+                <div class="faq-answer">
+                    <p>Sim! Fazemos orçamento gratuito e sem compromisso. Basta entrar em contato pelo WhatsApp ou pelo formulário do site.</p>
+                </div>
+                </div>
+
+                <div class="faq-item">
+                <button class="faq-question">Atendem em quais regiões?</button>
+                <div class="faq-answer">
+                    <p>Atendemos Belo Horizonte e região metropolitana. Para outras localidades, consulte condições especiais.</p>
+                </div>
+                </div>
+
+                <div class="faq-item">
+                <button class="faq-question">Quais tipos de vidro vocês trabalham?</button>
+                <div class="faq-answer">
+                    <p>Trabalhamos com vidros temperados, laminados, espelhos, boxes, janelas, portas e projetos sob medida.</p>
+                </div>
+                </div>
+
+                <div class="faq-item">
+                <button class="faq-question">O vidro temperado é seguro?</button>
+                <div class="faq-answer">
+                    <p>Sim! O vidro temperado é até 5 vezes mais resistente que o vidro comum e, em caso de quebra, fragmenta em pedaços pequenos que reduzem riscos de acidentes.</p>
+                </div>
+                </div>
+
+                <div class="faq-item">
+                <button class="faq-question">Qual o prazo médio de instalação?</button>
+                <div class="faq-answer">
+                    <p>O prazo varia conforme o projeto, mas em média as instalações são realizadas entre 5 a 10 dias após a confirmação do pedido.</p>
+                </div>
+                </div>
+
+            </div>
+            </section>
         <div class="location" id="local">
             <h1>Localização</h1>
             <p>Nossa vidraçaria se encontra no endereço: <a href="https://share.google/ziv4amZJ8ZQCiDJij" style="text-decoration: none; color: gold;">Rua Coronel Figueiredo, N° 209, Cachoeirinha - Belo Horizonte, Minas Gerais</a>
@@ -933,7 +970,7 @@
     <footer>
         <p>Contato: (31) 2512-9685 | 99797-7466</p>
         <p>&reg; 2024 Vidrosa Comércio de Vidros e Esquadrias de Alumínios. <br>Todos os direitos reservados.</p><br>
-        <em onclick="dev()">&copy; Desenvolvido por Clintin dos Sites.</em>
+        <em><a href="https://clintindossites.vercel.app" target="_blank">&copy; Desenvolvido por Clintin dos Sites.</a></em>
         <a  class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
             <img onclick=" wppOpen(); return gtag_report_conversion();" src="./assets/icons/whatssapp.svg" alt="Botão whatsapp">
             <span class="tooltip-text">Agende seu orçamento.</span>
@@ -941,7 +978,70 @@
     </footer>
     <script src="./script.js"></script>
     <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const reviews = [
+        {
+          author_name: "Maria Silva",
+          rating: 5,
+          text: "Ótimo atendimento e serviço impecável. Recomendo muito!"
+        },
+        {
+          author_name: "João Pereira",
+          rating: 4,
+          text: "Profissionais atenciosos, entregaram no prazo."
+        },
+        {
+          author_name: "Ana Souza",
+          rating: 5,
+          text: "Qualidade excelente nos vidros, ficaram perfeitos!"
+        },
+        {
+          author_name: "Carlos Andrade",
+          rating: 5,
+          text: "Muito satisfeito com o trabalho, atendimento de primeira!"
+        }
+      ];
+
+      let html = "";
+      reviews.forEach(r => {
+        html += `
+          <div class="review-card">
+            <p class="author">${r.author_name}</p>
+            <p class="stars">${"⭐".repeat(r.rating)}</p>
+            <p class="text">"${r.text}"</p>
+          </div>
+        `;
+      });
+
+      document.getElementById("google-reviews").innerHTML = html;
+    });
+  </script>
+  <script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(button => {
+    button.addEventListener('click', () => {
+      const faqAnswer = button.nextElementSibling;
+      const isActive = button.classList.contains('active');
+
+      // Fecha todos antes de abrir outro
+      document.querySelectorAll('.faq-answer').forEach(answer => {
+        answer.style.display = 'none';
+      });
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      if (!isActive) {
+        faqAnswer.style.display = 'block';
+        button.classList.add('active');
+      }
+    });
+  });
+</script>
+    <script>
         AOS.init();
     </script>
+    
 </body>
 </html>

@@ -164,13 +164,18 @@ nav a:hover {
 .hero h1 {
     font-size: 50px;
     text-transform: uppercase;
-     background: linear-gradient(to right, #fff, rgb(32, 48, 187));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: gold;
+
+     
 }
 .hero h2 {
     font-size: 1.3rem;
     text-transform: uppercase;
+    background: linear-gradient(to right, #fff, rgb(32, 153, 187));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .hero {
     background-position: relative;
@@ -420,50 +425,73 @@ nav a:hover {
     font-size: 17px;
     font-weight: 600;
 }
-.coments{
-    height: 450px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color:#06121e ;
-    color: whitesmoke;
-    align-items: center;
-    
-    
-    
-}
-.coments ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-    width: 50%;
-    margin: 20px auto;
-    position: absolute;
-    flex: 1;
-    right: 20px;
-    overflow: hidden;
-}
-.coments li {
-    font-size: 35px;
-    display: none;
-}
-.coments li:first-child {
-    display: block;
-}
-.coments div {
-    position: relative;
-    margin: auto;
-    width: 50%;
-    display: inline-block;
-    flex: 1;
-}
-.coments img {
-    height: 400px;
-    display: block;
-    
+.reviews{
+    padding: 20px;
 }
 
+.reviews h2 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.reviews-container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .review-card {
+      background: #0d2236;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .author {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .stars {
+      color: #ffc107;
+      margin-bottom: 12px;
+    }
+
+    .text {
+      font-style: italic;
+      color: #d1d1d1;
+    }
+
+    .btn-google {
+      display: flex;
+      margin-top: 40px;
+      background: #28a745;
+      color: white;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: background 0.3s, transform 0.2s;
+      max-width: fit-content;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto;
+    }
+
+    .btn-google:hover {
+      background: #218838;
+      transform: scale(1.05);
+    }
 .fotos {
     justify-content: center;
     text-align: center;
@@ -516,6 +544,50 @@ nav a:hover {
     border: 3px solid goldenrod;
     transition: 0.5s;
 }
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #1a2d44;
+  }
+
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.3rem;
+    transition: transform 0.3s;
+  }
+
+  .faq-question.active::after {
+    content: '-';
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 0 15px 15px 15px;
+    color: #d1d1d1;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer p {
+    margin: 0;
+  }
+
 .location {
     justify-content: center;
     text-align: center;
@@ -595,10 +667,11 @@ footer {
     text-align: center;
     line-height: 2;
 }
-footer em {
+footer em a{
     color: gold;
     transition: 1s;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn-whatsapp{
     position: fixed;
@@ -699,9 +772,7 @@ footer em {
    .hero p {
     font-size: 15px;
    }
-   .sobre {
    
-   }
    .texto {
 
     line-height: 1.5;
@@ -722,7 +793,7 @@ footer em {
    
    .services{
     width: 100%;
-  
+    padding: 20px;
     margin: 0 auto;
    }
    .texto-services {
