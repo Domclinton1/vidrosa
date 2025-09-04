@@ -72,53 +72,43 @@
     <!-- End Meta Pixel Code -->
 </head>
 <body>
-    <header class="menuPai">
-        <div class="logo" >
-            <img src="./assets/icons/logo.png" alt="Logomarca da Vidrosa Comercio de Vidros" >
-        </div>
-        <div class="menuHamburguer" onclick="toggleMenu()">
-            &#9776;
-        </div>
-        <nav class="menuFilho" id="menuFilho">
-            <ul class="menuLista">
-                <li onclick="inicio()">Inicio</li>
-                <li onclick="sobre()">Sobre</li>
-                <li onclick="services()">Serviços</li>
-                <li onclick="fotos()">Fotos</li>
-                <li onclick="localiza()">Localização</li>
-                <li onclick="contato()">Contato</li>
-            </ul>
-        </nav>
-    </header>
-    </header>
+    <header id="header">
+  <nav class="navbar">
+    <a href="#" class="logo"><img src="./assets/icons/logo.png" alt="Logomarca da Vidraçaria Vidrosa"></a>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="menu" id="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#serviços">Serviços</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#contato" >
+        Contato
+      </a>
+    </div>
+  </nav>
+  <div class="menu-overlay" id="menuOverlay"></div>
+</header>
     
     <main>
-        <div class="banner" id="banner">
-            <div class="banner-logo" data-aos="fade-up" data-aos-delay="500"></div>
-            <img 
-            data-aos="flip-up"
-                data-aos-delay="500"
-                data-aos-duration="1500"
-            class="logobanner"
-                 src="./assets/icons/logo.png" alt="">
-            <div class="hero">
-                <div class="order">
-                    <button class="orderButton" style="background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e);border: #fff 1px solid; cursor: pointer; z-index: 1;" onclick="return gtag_report_conversion('http://vidrosa.com.br');"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <section class="hero">
+                <h1 data-aos="fade-down">A vidraçaria que transforma sua visão em realidade</h1>
+               
+                    <button class="order orderButton" style="background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e);border: #fff 1px solid; cursor: pointer; z-index: 1;" onclick="return gtag_report_conversion('http://vidrosa.com.br');"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                         <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                     </svg>Solicitar Orçamento</button>
-                </div>
+             
 
-                <h1 data-aos="fade-down">A vidraçaria que transforma sua visão em realidade</h1>
-                <h2 data-aos="fade-up">
+                <h2 data-aos="fade-right">
                 Descubra o poder do blindex com a Vidraçaria Vidrosa, a vidraçaria mais proxima de você em Belo Horizonte - MG.
                 </h2>
-            </div>
-              
-        </div>
-        <div class="sobre" id="about">
+            </section>
+        <div class="sobre" id="sobre">
            <div class="texto">
-            <h1>Sobre a vidraçaria</h1>
-            <p>Bem-vindo à vidaraçaria <strong style="color: gold;">Vidrosa Comércio de Vidros e Esquadrias de Alumínio</strong>, sua parceira confiável em soluções de vidros personalizados. Com mais de 25 anos de experiência no setor, estamos comprometidos em fornecer produtos de vidros temperados de alta qualidade e serviços excepcionais para atender às necessidades dos nossos clientes.Na Vidrosa, combinamos habilidade artesanal com tecnologia moderna para criar peças únicas e funcionais que aprimoram espaços residenciais e comerciais. Desde janelas e portas até espelhos e divisórias, nossa equipe dedicada trabalha incansavelmente para garantir a satisfação do cliente em cada projeto.</p>
+            <h2>Sobre a vidraçaria</h2>
+            <p>Bem-vindo à vidaraçaria <strong style="color: gold;">Vidrosa Comércio de Vidros e Esquadrias de Alumínio</strong>, sua parceira confiável em soluções de vidros personalizados. Com mais de <span style="color: gold;">28 anos</span> de experiência no setor, estamos comprometidos em fornecer produtos de vidros temperados de alta qualidade e serviços excepcionais para atender às necessidades dos nossos clientes.Na Vidrosa, combinamos habilidade artesanal com tecnologia moderna para criar peças únicas e funcionais que aprimoram espaços residenciais e comerciais. Desde janelas e portas até espelhos e divisórias, nossa equipe dedicada trabalha incansavelmente para garantir a satisfação do cliente em cada projeto.</p>
            </div>
            <div class="img-sobre">
                 <div class="aboutimage" data-aos="fade-down" data-aos-duration="800">
@@ -658,7 +648,7 @@
                     <br>- Luiz Azevedo.</li>
             </ul>
         </div>
-        <div class="fotos" id="foto">
+        <div class="fotos" id="fotos">
             <h1>Fotos</h1>
             <div class="slider">
                 <div class="slides">
@@ -912,9 +902,9 @@
             <h1>Localização</h1>
             <p>Nossa vidraçaria se encontra no endereço: <a href="https://share.google/ziv4amZJ8ZQCiDJij" style="text-decoration: none; color: gold;">Rua Coronel Figueiredo, N° 209, Cachoeirinha - Belo Horizonte, Minas Gerais</a>
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.094219231166!2d-43.95261572526601!3d-19.878243036697974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69084c58924dd%3A0x8324b8635dfbadbf!2sR.%20Cel.%20Figueiredo%2C%20209%20-%20Cachoeirinha%2C%20Belo%20Horizonte%20-%20MG%2C%2031150-380!5e0!3m2!1spt-BR!2sbr!4v1755982238613!5m2!1spt-BR!2sbr" width="600" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.094219231166!2d-43.95261572526601!3d-19.878243036697974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69084c58924dd%3A0x8324b8635dfbadbf!2sR.%20Cel.%20Figueiredo%2C%20209%20-%20Cachoeirinha%2C%20Belo%20Horizonte%20-%20MG%2C%2031150-380!5e0!3m2!1spt-BR!2sbr!4v1755982238613!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="contato" id="contact">
+        <div class="contato" id="contato">
             <h1>Contato</h1>
             <p>Entre em contato conosco para que possamos oferecer uma solução para a sua necessidade.</p>
             <ul>

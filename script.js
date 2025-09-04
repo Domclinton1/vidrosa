@@ -1,43 +1,28 @@
-function toggleMenu() {
-    const menu = document.querySelector('.menuFilho');
-    menu.classList.toggle('active');
-}
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("menuOverlay");
+const header = document.getElementById("header");
+let lastScroll = 0;
 
-let lastScrollTop = 0;
-window.addEventListener('scroll', function() {
-    const menuPai = document.querySelector('.menuPai');
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        menuPai.style.top = "-100px";
-    } else {
-        // Scrolling up
-        menuPai.style.top = "0";
-    }
-    lastScrollTop = scrollTop;
+// Abrir menu
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  overlay.classList.toggle("active");
 });
 
-window.addEventListener('click', function(event) {
-    const menu = document.querySelector('.menuFilho');
-    const menuHamburguer = document.querySelector('.menuHamburguer');
-    if (!menu.contains(event.target) && !menuHamburguer.contains(event.target)) {
-        menu.classList.remove('active');
-    }
+// Fechar ao clicar no overlay
+overlay.addEventListener("click", closeMenu);
+
+// Fechar ao clicar em um link
+menu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", closeMenu);
 });
 
-// Função para fechar o menu quando a página é rolada
-function closeMenuOnScroll() {
-    var menu = document.getElementById('menuFilho');
-
-    // Verifica se o menu está aberto
-    if (menu.classList.contains('active')) {
-        // Fecha o menu
-        menu.classList.remove('active');
-    }
+function closeMenu() {
+  menu.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
-// Adiciona um event listener para escutar por rolagens na página
-window.addEventListener('scroll', closeMenuOnScroll);
 
 function dev() {
     var click = window.document.querySelectorAll('dev')
@@ -72,30 +57,6 @@ function insta(){
     window.open("https://instagram.com/vidrosa_ofc")
 }
 
-function inicio(){
-    var click = window.document.getElementById('inicio')
-    window.location.href = '#banner'
-}
-function sobre() {
-    var click = window.document.getElementById('sobre')
-    window.location.href = '#about'
-}
-function services() {
-    var click = window.document.getElementById('services')
-    window.location.href = '#serviços'
-}
-function fotos(){
-    window.document.getElementById('fotos')
-    window.location.href = '#foto'
-}
-function localiza() {
-    var click = window.document.getElementById('location')
-    window.location.href = '#local'
-}
-function contato(){
-    var click = window.document.getElementById('contato')
-    window.location.href = '#contact'
-}
 document.addEventListener("DOMContentLoaded", function() {
     const openModalButtons = document.querySelectorAll(".openModal");
     const modals = document.querySelectorAll(".modal");
