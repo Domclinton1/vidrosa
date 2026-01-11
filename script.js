@@ -25,7 +25,7 @@ function closeMenu() {
 
 function dev() {
   var click = window.document.querySelectorAll("dev");
-  window.open("https://clintindossites.vercel.app");
+  window.open("https://clintindossites.com.br");
 }
 
 var orderButtons = document.getElementsByClassName("orderButton");
@@ -47,7 +47,7 @@ function wppOpen() {
 }
 
 function call() {
-  window.location.href = "tel: +55313125129685";
+  window.location.href = "tel: +553199279-9772";
 }
 
 function email() {
@@ -147,3 +147,28 @@ document.addEventListener("DOMContentLoaded", function () {
 document.querySelector(".menu-toggle").addEventListener("click", function () {
   document.querySelector("nav ul").classList.toggle("active");
 });
+
+//formulario whatspp
+document
+  .getElementById("whatsappForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+    const endereco = document.getElementById("endereco").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    const telefone = "5531992799772"; // WhatsApp da Vidrosa
+
+    const texto = `
+Olá, gostaria de solicitar um orçamento.
+
+Nome: ${nome}
+Endereço da obra: ${endereco}
+Mensagem: ${mensagem}
+    `;
+
+    const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+  });
