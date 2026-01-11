@@ -28,17 +28,6 @@ function dev() {
   window.open("https://clintindossites.com.br");
 }
 
-var orderButtons = document.getElementsByClassName("orderButton");
-
-function openWpp() {
-  var click = window.open(
-    "https://wa.me/5531997977466?text=Ola,%20quero%20fazer%20um%20orçamento%20sobre um projeto..."
-  );
-}
-for (var i = 0; i < orderButtons.length; i++) {
-  orderButtons[i].addEventListener("click", openWpp);
-}
-
 function wppOpen() {
   var click = window.document.querySelectorAll("wpp");
   window.open(
@@ -149,26 +138,21 @@ document.querySelector(".menu-toggle").addEventListener("click", function () {
 });
 
 //formulario whatspp
-document
-  .getElementById("whatsappForm")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
+function enviarWhats() {
+  const nome = document.getElementById("nome").value;
+  const endereco = document.getElementById("endereco").value;
+  const mensagem = document.getElementById("mensagem").value;
 
-    const nome = document.getElementById("nome").value;
-    const endereco = document.getElementById("endereco").value;
-    const mensagem = document.getElementById("mensagem").value;
+  const telefone = "5531992799772";
 
-    const telefone = "5531992799772"; // WhatsApp da Vidrosa
-
-    const texto = `
-Olá, gostaria de solicitar um orçamento.
+  const texto = `Olá, gostaria de solicitar um orçamento.
 
 Nome: ${nome}
 Endereço da obra: ${endereco}
-Mensagem: ${mensagem}
-    `;
+Mensagem: ${mensagem}`;
 
-    const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
-
-    window.open(url, "_blank");
-  });
+  window.open(
+    `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`,
+    "_blank"
+  );
+}
